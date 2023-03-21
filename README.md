@@ -1,2 +1,2 @@
 # OregonTrail
-# Aaron Hess, Elliot Schmeling, Elliott Powell
+# Austin Hanni-Wells, Aaron Hess, Elliott Powell, Elliot Schmeling 
