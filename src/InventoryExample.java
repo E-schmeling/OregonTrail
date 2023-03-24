@@ -21,5 +21,14 @@ public class InventoryExample {
         System.out.println(inventory.toString());
 
 
-    }
+        //Creates a new store
+        Store store = new Store("Trader Bob's", inventory);
+            //Prints out store's inventory for user
+            System.out.println(store.toString());
+
+            store.purchase(2, 4);
+
+            System.out.println("\n\n"+inventory.toString());
+            System.out.println(store.toString());
+        }
 }

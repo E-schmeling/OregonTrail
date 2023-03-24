@@ -4,16 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f2d4a3-cd73-4dd4-b10a-2f0df417c21d" name="Changes" comment="Made rough functionality for inventory system and item classes. Also added example class to show interfacing with items and the inventory class">
+    <list default="true" id="f5f2d4a3-cd73-4dd4-b10a-2f0df417c21d" name="Changes" comment="Refines Previous examples and adds documentation. Changes how the count of items works as well">
+      <change afterPath="$PROJECT_DIR$/src/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StoreItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InventoryExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InventoryExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679411337466</updated>
-      <workItem from="1679411340995" duration="6275000" />
+      <workItem from="1679411340995" duration="17490000" />
     </task>
     <task id="LOCAL-00001" summary="Made rough functionality for inventory system and item classes. Also added example class to show interfacing with items and the inventory class">
       <created>1679412927917</created>
@@ -58,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679412927917</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refines Previous examples and adds documentation. Changes how the count of items works as well">
+      <created>1679435203912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679435203912</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Made rough functionality for inventory system and item classes. Also added example class to show interfacing with items and the inventory class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made rough functionality for inventory system and item classes. Also added example class to show interfacing with items and the inventory class" />
+    <MESSAGE value="Refines Previous examples and adds documentation. Changes how the count of items works as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refines Previous examples and adds documentation. Changes how the count of items works as well" />
   </component>
 </project>

@@ -31,12 +31,29 @@ public class Inventory {
         return -1;
     }
 
+    public void setItems(ArrayList<Item> items) {
+        this.items = items;
+    }
+
+    public double getDollars() {
+        return dollars;
+    }
+
+    public void setDollars(double dollars) {
+        this.dollars = dollars;
+    }
+
+    public void takeDollars(double amount){
+        dollars-=amount;
+    }
+
+
     //Display Inventory
     //Need to add section for each type of item class
-
     @Override
     public String toString() {
         String toReturn = "";
+        toReturn+="Money:  "+dollars+"\n";
         //Food
         toReturn+="Name\tType\tQuantity\n";
         for(Item x:items){
