@@ -18,17 +18,26 @@ public class InventoryExample {
         inventory.add(new Food(Food.Type.WATER, "aqua", 10));
 
         //Should output 5 aqua and 2 Mr. Moo
-        System.out.println(inventory.toString());
+        System.out.println(inventory);
 
 
         //Creates a new store
         Store store = new Store("Trader Bob's", inventory);
             //Prints out store's inventory for user
-            System.out.println(store.toString());
+            System.out.println(store);
 
             store.purchase(2, 4);
 
-            System.out.println("\n\n"+inventory.toString());
-            System.out.println(store.toString());
-        }
+            System.out.println("\n\n"+inventory);
+            System.out.println(store);
+
+
+
+
+
+
+
+    }
+
+
 }

@@ -26,6 +26,9 @@ public class Store {
         }
     }
 
+    public void addItem(StoreItem item){
+        storeItems.add(item);
+    }
 
     @Override
     public String toString() {
