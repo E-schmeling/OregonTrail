@@ -42,4 +42,10 @@ public class Store {
         }
         return toReturn;
     }
+
+    public void setMultiplier(double storeMultiplier) {
+        for(StoreItem item:storeItems){
+            item.setCost(item.getCost()*storeMultiplier);
+        }
+    }
 }
