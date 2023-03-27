@@ -77,7 +77,9 @@ public class ExcelTestClass {
                     row = row1.getRowNum();
                 }
             }
-            for(int j = row+3; j<row+Integer.parseInt(sheet.getRow(row).getCell(2).toString()); j++){
+
+            for(int j = row+3; j<sheet.getLastRowNum(); j++){
+                if()
                 String name = sheet.getRow(j).getCell(0).toString();
                 int weight = Integer.parseInt(sheet.getRow(j).getCell(5).toString());
                 String subtype = sheet.getRow(j).getCell(2).toString();
