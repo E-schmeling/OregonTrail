@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f2d4a3-cd73-4dd4-b10a-2f0df417c21d" name="Changes" comment="Added to RandomNumber method to get sicknesses.">
+    <list default="true" id="f5f2d4a3-cd73-4dd4-b10a-2f0df417c21d" name="Changes" comment="Split RandomEvent and RandomSickness into two separate methods.">
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680011853467</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Split RandomEvent and RandomSickness into two separate methods.">
+      <created>1680012233198</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680012233198</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +136,7 @@
     <MESSAGE value="Tweaked inventory methods.  Also added code to give shops basic functionality in the game." />
     <MESSAGE value="Added RandomNumber method in Map class." />
     <MESSAGE value="Added to RandomNumber method to get sicknesses." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added to RandomNumber method to get sicknesses." />
+    <MESSAGE value="Split RandomEvent and RandomSickness into two separate methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Split RandomEvent and RandomSickness into two separate methods." />
   </component>
 </project>
