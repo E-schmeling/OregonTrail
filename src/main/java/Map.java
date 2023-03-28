@@ -48,13 +48,20 @@ public class Map {
             daynumber++;
         }
 
-        public void RandomNumber() {
+        public void RandomNumber(int health) {
             int randNum = (int) (Math.random() % 1000);
-            if (randNum >= 0 && randNum <= 6) { // snakebite occurs, call event class
+            if (randNum >= 0 && randNum <= 6) { // snakebite occurs(0.7%), call event class
             }
-            else if (randNum >= 7 && randNum <= 26) { // lose trail, call event class
+            else if (randNum >= 7 && randNum <= 26) { // lose trail(2.0%), call event class
             }
-            else if (randNum >= 27 && randNum <= 46) { // thief comes during night, call event class
+            else if (randNum >= 27 && randNum <= 46) { // thief comes during night(2.0%), call event class
+            }
+
+            int randSickness = (int) (Math.random() % 100);
+            if (health != 40) {
+                if (randSickness >= 0 && randSickness <= (40 - health)) {
+                    // one of the random sicknesses is given to this person
+                }
             }
         }
 
