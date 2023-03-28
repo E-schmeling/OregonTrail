@@ -1,8 +1,10 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Inventory {
     //Stores all items for game
     private ArrayList<Item> items;
+    private ArrayList<Person> peopleinparty;
     //Stores group's money
     private double dollars;
 
@@ -24,6 +26,11 @@ public class Inventory {
         if(found==false){
             items.add(item);
         }
+    }
+
+    public Inventory(ArrayList<Person> peopleinparty, double dollars) {
+        this.peopleinparty = peopleinparty;
+        this.dollars = dollars;
     }
 
     //Loops through inventory and adds up weight of items (NEEDS IMPLEMENTED)
