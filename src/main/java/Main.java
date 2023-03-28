@@ -66,7 +66,7 @@ public class Main {
 
 
 
-        out.println("You leave leaving " +oregonTrail.closestloc().getLocationname()+ " on " + oregonTrail.toDate());
+        out.println("You leave leaving " + oregonTrail.closestloc().getLocationname() + " on " + oregonTrail.toDate());
 
 
     }

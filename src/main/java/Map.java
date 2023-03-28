@@ -45,10 +45,37 @@ int day=0;
             }
             return locations.get(locations.size()-1);
         }
+
+
         public void AdvanceDay() {
             playerdistance += 20;
             daynumber++;
         }
+
+    public void RandomEvent() {
+        int randNum = (int) (Math.random() % 100);
+        if (randNum >= 0 && randNum <= 1) { // lose trail(2.0%), call event class
+        }
+        else if (randNum >= 2 && randNum <= 3) { // thief comes during night(2.0%), call event class
+        }
+    }
+
+    public void RandomSickness(String name, int health) {
+        int randSickness = (int) (Math.random() % 100);
+        if (health != 40) {
+            if (randSickness >= 0 && randSickness <= (40 - health)) {
+                // one of the random sicknesses is given to this person
+                int num = (int) (Math.random() % 2);
+                if (num == 0) {
+                    // print out that "name" got dysentery
+                } else if (num == 1) {
+                    // print out that "name" got measles
+                }
+            }
+
+        }
+    }
+
     @Override
     public String toString() {
         return "RelearningJavaEt{" +
@@ -57,14 +84,13 @@ int day=0;
                 ", daynumber=" + daynumber +
                 '}';
     }
-    String toDate()
+
+    public String toDate()
     {
             int numdate= this.daynumber;
             LocalDate date = LocalDate.of(1850, 3, 1).plusDays(numdate);
             String formattedDate = date.format(DateTimeFormatter.ofPattern("MMMM d")); // format as "MonthName day"
             return  formattedDate;
     }
-
-
 
 }
