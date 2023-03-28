@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f2d4a3-cd73-4dd4-b10a-2f0df417c21d" name="Changes" comment="Added RandomNumber method in Map class.">
+    <list default="true" id="f5f2d4a3-cd73-4dd4-b10a-2f0df417c21d" name="Changes" comment="Added to RandomNumber method to get sicknesses.">
       <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +92,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680010946111</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added to RandomNumber method to get sicknesses.">
+      <created>1680011740170</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680011740170</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added to RandomNumber method to get sicknesses.">
+      <created>1680011853467</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680011853467</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +128,7 @@
     <MESSAGE value="Refines Previous examples and adds documentation. Changes how the count of items works as well" />
     <MESSAGE value="Tweaked inventory methods.  Also added code to give shops basic functionality in the game." />
     <MESSAGE value="Added RandomNumber method in Map class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added RandomNumber method in Map class." />
+    <MESSAGE value="Added to RandomNumber method to get sicknesses." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added to RandomNumber method to get sicknesses." />
   </component>
 </project>
