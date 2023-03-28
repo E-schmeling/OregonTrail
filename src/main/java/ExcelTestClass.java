@@ -79,7 +79,7 @@ public class ExcelTestClass {
             }
 
             for(int j = row+3; j<sheet.getLastRowNum(); j++){
-                if()
+               // if()
                 String name = sheet.getRow(j).getCell(0).toString();
                 int weight = Integer.parseInt(sheet.getRow(j).getCell(5).toString());
                 String subtype = sheet.getRow(j).getCell(2).toString();
