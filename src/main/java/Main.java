@@ -76,8 +76,10 @@ public class Main {
         //insert store here
 
 
-
+        out.println("You go shopping here, you just cant see it.");
         out.println("You leave leaving " + oregonTrail.closestloc().getLocationname() + " on " + oregonTrail.toDate());
+
+
 
 
     }
@@ -91,4 +93,5 @@ public class Main {
         else if (answer.charAt(0)=='n' || answer.charAt(0)=='N') {return false;}
         return false;
     }
+
 }

@@ -29,12 +29,13 @@ public class Map {
         private ArrayList<Location> locations;
         private int playerdistance=0;
         private int daynumber;//to deal with weather events, possibly add days depending on what month is picked and then subtract that at the end when displaying how long of a trip you had.
-
+        private int startnumber;
 
 
         public Map(ArrayList<Location> locations, int day) {
             this.locations = locations;
             this.daynumber=day;
+            this.startnumber=day;
         }
 
         public Location closestloc() {
@@ -48,10 +49,24 @@ public class Map {
 
 
         public void AdvanceDay() {
-            playerdistance += 20;
+            int dist = distanceTravelled();
+            playerdistance += dist;
             daynumber++;
+            DayDisplay(dist);
         }
+        public int distanceTravelled(){
+            //for testing will be 20, however at some point will need to handle distance calulation
+            //may need to be passed information
+            return 20;
+        }
+    public void DayDisplay(int distanceTravelled){
+//display day related information every time a day advances
+           out.println(toDate()+"Day "+(daynumber-startnumber+1)+":"); //plus one so we dont get "April 1st day 0:"
+           out.println("Today you travelled "+ distanceTravelled+".");
+           out.println("Unfortunately, "+"X"+"got Sick with"+ "Y"+"today.");//possibly a journal form of person update
 
+
+    }
     public void RandomEvent() {
         int randNum = (int) (Math.random() % 100);
         if (randNum >= 0 && randNum <= 1) { // lose trail(2.0%), call event class

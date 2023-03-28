@@ -32,7 +32,8 @@ public class Location {
         this.milesinfromstart = milesinfromstart;
         this.locationname = locationname;
         this.store = store;
-        this.store.setMultiplier(storemultiplier);
+//        this.store.setMultiplier(storemultiplier);
+        //This line wigs out due to the null stores initiated for testing because SOMEONE doesnt have good stores :)
     }
 
     public Location (int milesinfromstart, String locationname) {
