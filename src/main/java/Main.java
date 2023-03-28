@@ -54,11 +54,22 @@ public class Main {
                 day+=0;
                 break;
         }
-        ArrayList<Location> runnerLocations = new ArrayList<Location>();
-        runnerLocations.add(new Location(0,"Dummy0"));
-        runnerLocations.add(new Location(1000,"Dummy1"));
-        runnerLocations.add(new Location(2000,"Dummy2"));
-        runnerLocations.add(new Location(2500, "Dummy river"));
+
+            ArrayList<Location> runnerLocations = new ArrayList<Location>();
+        runnerLocations.add(new Location(0,"Independence",null, 1));
+        //Declare information about KR crossing.
+        Event krCrossing = new Event(Event.EventType.RIVERCROSSING);
+        runnerLocations.add(new Location(102, "Kansas River crossing",krCrossing));
+        //Declare information about BBR crossing.
+        Event bbrCrossing = new Event(Event.EventType.RIVERCROSSING);
+        runnerLocations.add(new Location(184,"Big Blue River Crossing",bbrCrossing));
+
+        runnerLocations.add(new Location(319,"Fort Kearny",null, 1.25));
+        //Declare information about AshHallow, Event class will probably need updating.
+        Event ashHallow = new Event(Event.EventType.ENDOFPROTYPE);
+        runnerLocations.add(new Location(504,"Ash Hallow", ashHallow));
+
+
         Map oregonTrail = new Map(runnerLocations,day);
 
 

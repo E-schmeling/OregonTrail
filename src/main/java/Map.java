@@ -8,21 +8,21 @@ import static java.lang.System.out;
 public class Map {
     public static void main(String[] args){
 
-        //series of locations for testing
-        ArrayList<Location> runnerLocations = new ArrayList<>();
-
-        //Insert location adding loop at some point when aaron is Good
-        runnerLocations.add(new Location(0,"location0"));
-        runnerLocations.add(new Location(1000,"Location1"));
-        runnerLocations.add(new Location(2000,"location2"));
-        runnerLocations.add(new Location(2500, "Special event crossing river"));//special event
-int day=0;
-        Map trail = new Map(runnerLocations, day);
-
-        //jerk
-        out.println(trail.toString());
-        out.println("");
-        out.println(trail.closestloc());
+//        //series of locations for testing
+//        ArrayList<Location> runnerLocations = new ArrayList<>();
+//
+//        //Insert location adding loop at some point when aaron is Good
+//        runnerLocations.add(new Location(0,"location0"));
+//        runnerLocations.add(new Location(1000,"Location1"));
+//        runnerLocations.add(new Location(2000,"location2"));
+//        runnerLocations.add(new Location(2500, "Special event crossing river"));//special event
+//int day=0;
+//        Map trail = new Map(runnerLocations, day);
+//
+//        //jerk
+//        out.println(trail.toString());
+//        out.println("");
+//        out.println(trail.closestloc());
     }
 
 
@@ -60,7 +60,7 @@ int day=0;
         }
     }
 
-    public void RandomSickness(String name, int health) {
+    public void RandomSickness(String name, int health) {//name should be replaced with Enum
         int randSickness = (int) (Math.random() % 100);
         if (health != 40) {
             if (randSickness >= 0 && randSickness <= (40 - health)) {
