@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.lang.Math;
 
 import static java.lang.System.out;
 
@@ -46,6 +47,17 @@ public class Map {
             playerdistance += 20;
             daynumber++;
         }
+
+        public void RandomNumber() {
+            int randNum = (int) (Math.random() % 1000);
+            if (randNum >= 0 && randNum <= 6) { // snakebite occurs, call event class
+            }
+            else if (randNum >= 7 && randNum <= 26) { // lose trail, call event class
+            }
+            else if (randNum >= 27 && randNum <= 46) { // thief comes during night, call event class
+            }
+        }
+
     @Override
     public String toString() {
         return "RelearningJavaEt{" +
