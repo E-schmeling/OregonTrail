@@ -40,6 +40,10 @@ public class Map {
             }
             return locations.get(locations.size()-1);
         }
+        public void AdvanceDay() {
+            playerdistance += 20;
+            daynumber++;
+        }
     @Override
     public String toString() {
         return "RelearningJavaEt{" +
