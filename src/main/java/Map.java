@@ -48,7 +48,7 @@ public class Map {
             daynumber++;
         }
 
-        public void RandomNumber(int health) {
+        public void RandomNumber(String name, int health) {
             int randNum = (int) (Math.random() % 1000);
             if (randNum >= 0 && randNum <= 6) { // snakebite occurs(0.7%), call event class
             }
