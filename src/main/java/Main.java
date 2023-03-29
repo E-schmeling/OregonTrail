@@ -9,10 +9,14 @@ public class Main {
     static Scanner keyboard;
     static Map oregonTrail;
 
-
+//Needs:
+    //River crossings
+    //Career select
+    //koo's store
     public static void main(String[] args) {
-        inventory = new Inventory(500);
         out.println("Hello World!");
+        //Select Career here! Elliot can do at some point
+        inventory = new Inventory(500);
         List<String> name = Arrays.asList("John", "William", "James", "George", "Charles", "Joseph", "Robert", "Henry", "Edward", "Thomas", "Samuel", "David", "Frank", "Benjamin", "Andrew", "Peter", "Daniel", "Isaac", "Michael", "Abraham", "Mary", "Elizabeth", "Sarah", "Margaret", "Susan", "Ann", "Jane", "Emily", "Emma", "Catherine", "Caroline", "Martha", "Harriet", "Ellen", "Julia", "Alice", "Rebecca", "Hannah", "Louisa", "Frances");
         Random random = new Random();
         party = new ArrayList<Person>();
@@ -40,11 +44,11 @@ public class Main {
         boolean cool = keyboardyn("Is this okay? (y/n)");
         if(!cool){out.println("This is MVP, I truly do not care.");}
         out.println("What month do you wish to leave?");
-        out.println("1. March");
-        out.println("2. April");
-        out.println("3. May");
-        out.println("4. June");
-        out.println("5. July");
+        out.println("1.) March");
+        out.println("2.) April");
+        out.println("3.) May");
+        out.println("4.) June");
+        out.println("5.) July");
         keyboard = new Scanner(System.in);
         int month = keyboard.nextInt();
         int day=0;
@@ -71,7 +75,7 @@ public class Main {
         Event bbrCrossing = new Event(Event.EventType.RIVERCROSSING);
         runnerLocations.add(new Location(184,"Big Blue River Crossing",bbrCrossing));
 
-        runnerLocations.add(new Location(319,"Fort Kearny",new Store("Koo Koo Kearney's", inventory), 1.25));
+        runnerLocations.add(new Location(319,"Fort Kearny",new Store("Koo Koo Kearney's", inventory), 1.25));//Koo's Store does not ever get called
         //Declare information about AshHallow, Event class will probably need updating.
         Event ashHallow = new Event(Event.EventType.ENDOFPROTYPE);
         runnerLocations.add(new Location(504,"Ash Hallow", ashHallow));

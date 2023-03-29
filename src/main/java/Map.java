@@ -38,6 +38,19 @@ public class Map {
             this.startnumber=day;
         }
 
+        public int distanceto(Location target){
+            return target.getMilesinfromstart()-playerdistance;
+
+        }
+
+    public int getPlayerdistance() {
+        return playerdistance;
+    }
+
+    //default to next location.
+        public int distanceto(){
+            return distanceto(closestloc());
+        }
         public Location closestloc() {
             for (Location loc : locations) {
                 if (loc.getMilesinfromstart() >= playerdistance) {
@@ -55,16 +68,17 @@ public class Map {
             DayDisplay(dist);
         }
         public int dailyDistanceTraveled(){
-            //for testing will be 20, however at some point will need to handle distance calculation
+            //for testing will be 20, however at some point will need to handle distance calulation
             //may need to be passed information
             return 20;
         }
-    private void DayDisplay(int distanceTravelled){
+    public void DayDisplay(int distanceTravelled){
 //display day related information every time a day advances
-            out.println(toDate()+"- Day "+(daynumber-startnumber+1)+":"); //plus one so we dont get "April 1st day 0:"
-            out.println("Today you travelled "+ distanceTravelled+" miles.");
-            //out.println("Unfortunately, "+"X"+"got Sick with"+ "Y"+"today.");//possibly a journal form of person update
-            out.println("Daily log of injuries, illnesses, events, etc. goes here");
+           out.println("Day "+(daynumber-startnumber)+", "+toDate()+":"); //plus one so we dont get "April 1st day 0:"
+           out.println("Today you travelled "+ distanceTravelled+" miles.");
+           out.println(distanceto()+" miles to "+closestloc().getLocationName()+".");
+           out.println("Daily log of injuries, illnesses, events, etc. goes here");
+
 
     }
     public void RandomEvent() {
@@ -108,7 +122,4 @@ public class Map {
             return  formattedDate;
     }
 
-    public int getPlayerdistance() {
-        return playerdistance;
-    }
 }

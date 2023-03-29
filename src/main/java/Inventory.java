@@ -5,6 +5,7 @@ public class Inventory {
     //Stores all items for game
     private ArrayList<Item> items;
     private ArrayList<Person> peopleinparty;
+
     //Stores group's money
     private double dollars;
 
