@@ -1,6 +1,6 @@
 public class Food extends Item{
     //Adds custom types of each item (controls behavior in standardized form)
-    public enum Type {MEAT, STARCH, WATER}
+    public enum Type {FOOD, WATER}
     private Type type;
 
 

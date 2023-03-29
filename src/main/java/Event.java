@@ -6,4 +6,11 @@ public class Event {
     public Event(EventType eventtype ) {
         this.eventType= eventtype;
     }
+
+    @Override
+    public String toString() {
+        return "Event{" +
+                "eventType=" + eventType +
+                '}';
+    }
 }

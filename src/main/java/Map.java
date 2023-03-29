@@ -49,22 +49,22 @@ public class Map {
 
 
         public void AdvanceDay() {
-            int dist = distanceTravelled();
+            int dist = dailyDistanceTraveled();
             playerdistance += dist;
             daynumber++;
             DayDisplay(dist);
         }
-        public int distanceTravelled(){
-            //for testing will be 20, however at some point will need to handle distance calulation
+        public int dailyDistanceTraveled(){
+            //for testing will be 20, however at some point will need to handle distance calculation
             //may need to be passed information
             return 20;
         }
-    public void DayDisplay(int distanceTravelled){
+    private void DayDisplay(int distanceTravelled){
 //display day related information every time a day advances
-           out.println(toDate()+"Day "+(daynumber-startnumber+1)+":"); //plus one so we dont get "April 1st day 0:"
-           out.println("Today you travelled "+ distanceTravelled+".");
-           out.println("Unfortunately, "+"X"+"got Sick with"+ "Y"+"today.");//possibly a journal form of person update
-
+            out.println(toDate()+"- Day "+(daynumber-startnumber+1)+":"); //plus one so we dont get "April 1st day 0:"
+            out.println("Today you travelled "+ distanceTravelled+" miles.");
+            //out.println("Unfortunately, "+"X"+"got Sick with"+ "Y"+"today.");//possibly a journal form of person update
+            out.println("Daily log of injuries, illnesses, events, etc. goes here");
 
     }
     public void RandomEvent() {
@@ -108,4 +108,7 @@ public class Map {
             return  formattedDate;
     }
 
+    public int getPlayerdistance() {
+        return playerdistance;
+    }
 }
